@@ -58,7 +58,7 @@ def run_forever(): #def bot crash
                                             bot.send_message(message.chat.id, bash[28672:32768])                                        
         bot.polling(none_stop=True, interval=0)
         raise Exception("Error simulated!")
-    except Exception:
+        except Exception:
         print("Something crashed your program. Let's restart it")
         run_forever() # Careful.. recursive behavior
         # Recommended to do this instead
